@@ -1,4 +1,6 @@
-// Sass
+@import url(https://fonts.googleapis.com/css?family=Hind+Vadodara|Pridi:300);
+
+// SassConf 2016
 
 $colors: (
   primary: #510059,
@@ -28,10 +30,13 @@ $border-color:         #ddd;
 $about-bg: #252525;
 
 // Typography
-$text-font:  'sofia-pro', 'Sofia Pro', 'Brandon Grotesque', 'Futura', 'Franklin Gothic', 'Helvetica', sans-serif;
-$header-font:  $text-font;
+// $text-font:  'sofia-pro', 'Sofia Pro', 'Brandon Grotesque', 'Futura', 'Franklin Gothic', 'Helvetica', sans-serif;
+// $header-font:  $text-font;
+// $sub-header-font:  $header-font; // replace w handwriting
+// $news-font: 'Rooney', 'rooney-web', 'Georgia', 'Cambria', serif;
+$text-font: 'Hind Vadodara', sans-serif;
+$header-font: 'Rooney', 'rooney-web', 'Georgia', 'Cambria', serif;
 $sub-header-font:  $header-font; // replace w handwriting
-$news-font: 'Rooney', 'rooney-web', 'Georgia', 'Cambria', serif;
 
 $line-height: 1.75;
 

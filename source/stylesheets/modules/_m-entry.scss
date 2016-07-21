@@ -17,7 +17,7 @@
     }
 
     h6 {
-        font-family: $news-font;
+        font-family: $text-font;
         color: $purple;
         font-weight: 400;
     }
@@ -25,7 +25,7 @@
     // override p width styles for blog posts
     p, ul {
         width: auto;
-        font-family: $news-font;
+        font-family: $text-font;
         line-height: 1.6;
     }
 
