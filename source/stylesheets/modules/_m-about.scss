@@ -4,7 +4,7 @@
     @include media(grid-sm) {
         padding-right: 4em;
     }
-    
+
     padding-bottom: ms(4);
     h1 {
         color: $white;
@@ -38,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 1em;
-    
+
     @include media(grid-lg) {
         flex-wrap: nowrap;
     }
@@ -71,4 +71,22 @@
 
 .about__organizer-info {
     padding-top: 1em;
+}
+
+.past-conferences__group {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.past-conferences__item {
+    @extend %no-bullets;
+    border: 1px solid red;
+    padding: 2em;
+    flex-basis: 8em;
+    margin: 0 2em 1em;
+    // display: inline-block;
+
+    &:not(:first-child) {
+        // margin-left: 2em;
+    }
 }
