@@ -31,6 +31,7 @@ h4 {
 }
 h3 {
   @include ms-respond(font-size, 2);
+  margin-bottom: 1em;
   font-family: $text-font;
   text-transform: uppercase;
 }
@@ -56,7 +57,7 @@ h1 {
   color: transparentize($text-color,.35);
 }
 
-a {font-weight: bold}
+a {font-weight: bold;}
 
 a:link,
 a:visited,

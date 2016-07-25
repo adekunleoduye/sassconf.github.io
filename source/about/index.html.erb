@@ -10,7 +10,7 @@ layout: layout
   <section class="about__content">
     <%= partial "partials/modules/about" %>
       <aside class="about__organizer-group">
-        <h2>Organizers</h2>
+        <h3>Organizers</h3>
         <% data.organizers.each do |organizer| %>
           <figure class="about__organizer-item">
             <%= image_tag "organizers/#{organizer.name.gsub(/[^a-z0-9\s]/i, '').split(' ').join('-').downcase}.jpg", :class => "organizer__picture" %>

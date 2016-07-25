@@ -4,9 +4,9 @@
 // }
 
 .m-nav__menu--wrapper {
-    max-width: 65rem;
-    margin: 0 auto;
-
+  max-width: 65rem;
+margin: 0 auto;
+// display: flex;
 }
 
 //secondary-header - AO Refactor
@@ -21,34 +21,41 @@
   width: 10em;
 }
 
+.menu__toggle {
+    float: right;
+    margin-top: 0.6em;
+}
+
 .m-nav__menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: left;
-    flex-direction: column;
-    @include media(grid-med) {
-        flex-direction: row;
-        flex: 1 0 100px;
-        flex-wrap: wrap;
-    }
-    @include media(grid-lg) {
-        flex: 1 0 200px;
-        flex-wrap: nowrap;
-    }
+    // width: 100%;
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // align-content: left;
+    // flex-direction: column;
+    // @include media(grid-med) {
+    //     flex-direction: row;
+    //     flex: 1 0 100px;
+    //     flex-wrap: wrap;
+    // }
+    // @include media(grid-lg) {
+    //     flex: 1 0 200px;
+    //     flex-wrap: nowrap;
+    // }
 }
 
 a.m-nav__link {
     color: $white;
     padding: 12px 24px;
+    width: 100%;
     text-decoration: none;
     font-weight: 400;
     display: block;
-    @include media(grid-sm) {
-        display: inline;
-        width: 25%;
-        text-align: center;
-    }
+    // @include media(grid-sm) {
+    //     display: inline;
+    //     width: 18%;
+    //     text-align: center;
+    // }
 
     &:hover,
     &:active {
@@ -95,7 +102,7 @@ a.m-nav__link {
     a.m-nav__link {
         &:hover,
         &:active {
-            background: $blue;
+            background: lighten($purple, 10%);
         }
         &.ticket {
             @include media(grid-med) {

@@ -29,6 +29,20 @@ $(document).ready(function(){
   var currentYear =  new Date().getFullYear();
   // var $workshopLearnMoreBtn = $('.js-workshops__learn-more');
 
+
+  // Nav toggler
+  $('.menu__toggle').bind('click', function(){
+   var $menu = $(this).parent().find('.m-nav__menu');
+
+   if($menu.hasClass('hide')){
+    $menu.removeClass('hide');
+   } else {
+    $menu.addClass('hide');
+   }
+
+   // $(this).parent().find('.m-nav__menu').removeClass('hide');
+  });
+
   $('.m-footer__current-year').html(currentYear);
 
   $subHeader.wrap($subHeaderContainer);
